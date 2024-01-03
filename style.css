@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    background-color: #d6c9c9;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    background-color: aqua;
+    width: 100%;
+    padding: 10px 0;
+}
+
+
+
+.container p {
+    text-align: center;
+    font-size: 20px;
+    margin: 140px 630px;
+    background-color: rgb(247, 247, 6);
+    font-weight: 700;
+    height: 30px;
+    width: 100px;
+   color: white;
+   background-color: rgb(145, 0, 241);
+   border: none;
+   border-radius: 5px;
+}
+
+
+.score-board {
+    display: flex;
+    /* flex-direction: column; Stack scores vertically on small screens */
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    gap: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.score-board .score1 #user-score,
+.score-board .score2 #com-score {
+    text-align: center;
+    font-weight: 800;
+}
+
+.main .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 50px; /* Adjust the top margin for better placement */
+    text-align: center;
+}
+
+.main .btn {
+    margin-top: 130px;
+}
+
+.main .btn #btn1{
+    background-color: red;
+    color: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-size: 20px;
+    margin: 5px; /* Add margin between buttons */
+    cursor: pointer;
+
+}
+
+.main .btn #btn2{
+    background-color: royalblue;
+    color: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-size: 20px;
+    margin: 5px; /* Add margin between buttons */
+    cursor: pointer;
+
+}
+
+.main .btn #btn3{
+    background-color: green;
+    color: white;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding: 7px 15px;
+    font-size: 20px;
+    margin: 5px; /* Add margin between buttons */
+    cursor: pointer;
+
+}
+
+/* Responsive styles using media queries */
+@media (max-width: 768px) {
+    .score-board {
+        font-size: 20px; /* Adjust font size on smaller screens */
+        flex-direction: column;
+    }
+
+    .container p{
+        margin: 160px;
+    }
+
+    .main .btn {
+        margin-top: 150px; /* Adjust the top margin for better placement on smaller screens */
+    }
+}
